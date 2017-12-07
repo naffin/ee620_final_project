@@ -16,7 +16,7 @@
 ############################################################################
 TRANSACTION_FILES = Transaction.sv
 DRIVER_FILES = scoreboard.sv driver_cbs.sv driver_cbs_scb.sv driver.sv
-ENV_FILES =  generator.sv environment.sv 
+ENV_FILES =  generator.sv environment.sv lc3_if.sv
 TEST_FILES = test_base.sv test_simple.sv
 VERILOG_FILES = ${PACKET_FILES} ${DRIVER_FILES} ${ENV_FILES} ${TEST_FILES} top.sv	
 TOPLEVEL = top

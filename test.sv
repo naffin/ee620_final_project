@@ -1,4 +1,6 @@
 program automatic test;
+	import lc3_interface_pkg::*;
+	virtual lc3_if lc3if = top.lc3if;
    	Test_base tb;
    	Test_simple simple_test = new();
 
