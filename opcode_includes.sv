@@ -1,17 +1,18 @@
-parameter ADD 	= 4'b0001;
-parameter AND 	= 4'b0101;
-parameter NOT 	= 4'b1001;
-parameter BR 	= 4'b0000;
-parameter JMP	= 4'b1100;
-parameter JSR	= 4'b0100;
-parameter RET	= 4'b1100;
-parameter LD	= 4'b0010;
-parameter LDI	= 4'b1010;
-parameter LDR	= 4'b0110;
-parameter LEA	= 4'b1110;
-parameter ST	= 4'b0011;
-parameter STI	= 4'b1011;
-parameter STR	= 4'b0111;
-parameter TRAP	= 4'b1111;
-parameter RTI	= 4'b1000;
-parameter RESERVED = 4'b1101;
+package Opcode_pkg;
+   typedef enum bit [3:0] {ADD = 4'b0001,
+		 AND = 4'b0101,
+		 NOT = 4'b1001,
+		 BR = 4'b0000,
+		 JMP =  4'b1100,
+		 JSR =  4'b0100,
+		 LD =  4'b0010,
+		 LDI =  4'b1010,
+		 LDR =  4'b0110,
+		 LEA =  4'b1110,
+		 ST =  4'b0011,
+		 STI =  4'b1011,
+		 STR =  4'b0111,
+		 TRAP =  4'b1111,
+		 RTI =  4'b1000,
+		 RESERVED =  4'b1101} Opcode;
+endpackage

@@ -40,8 +40,8 @@ class Environment;
    
    task run();
       fork
-	 gen.run(cfg.run_for_n_trans);
-	 drv.run(cfg.run_for_n_trans);
+	 gen.run();
+	 drv.run();
       join
    endtask // run
 
@@ -53,4 +53,6 @@ class Environment;
    task wrap_up();
       //$display("Number of transactions sent: %0d", scb.num_compared);
       $display("Wrap_up called");
+   endtask // wrap_up
+endclass
 endpackage

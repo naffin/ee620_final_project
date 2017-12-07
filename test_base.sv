@@ -1,7 +1,7 @@
 
 package Test_base_pkg;
    import Environment_pkg::*;
-   import svm_component_reg_pkg::*;
+   import svm_component_registry_pkg::*;
 
 `define svm_component_utils(T) \
 	typedef svm_component_registry #(T, `"T`") type_id; \

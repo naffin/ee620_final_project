@@ -1,6 +1,7 @@
 package Transaction_pkg;
+   import Opcode_pkg::*;
 class Transaction;
-	rand bit [3:0] opCode;
+	rand Opcode opCode;
 	rand bit [2:0] dr;
 	rand bit [2:0] sr;
 	rand bit [2:0] sr1;
@@ -14,9 +15,13 @@ class Transaction;
 	rand bit imm5_flag;
 	rand bit jsr_flag;
 
-	constraint opCode {
+	constraint opCode_c {
 		opCode != RESERVED;	
 	}
+
+	function Transaction copy();
+	   copy = new this;
+	endfunction
 endclass
 endpackage
 

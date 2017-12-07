@@ -1,7 +1,7 @@
 package Driver_cbs_scb_pkg;
    import Driver_cbs_pkg::*;
    import Transaction_pkg::*;
-   import scoreboard_pkg::*;
+   import Scoreboard_pkg::*;
 class Driver_cbs_scb extends Driver_cbs;
    Scoreboard scb;
 
