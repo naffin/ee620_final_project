@@ -26,9 +26,13 @@ class Driver;
       end
    endtask // run
 
-   task transmit_inst();
-      // 
-   endtask
+	task transmit_inst(input Transaction t);
+		// put instruction on the memory port 
+		// single cycle transactions go here
+		case(t.opCode) begin
+			
+		endcase
+	endtask
 
    task transmit(Transaction t);
       case(t.opCode)

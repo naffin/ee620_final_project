@@ -16,10 +16,9 @@
 ############################################################################
 TRANSACTION_FILES = opcode_includes.sv transaction.sv
 DRIVER_FILES = scoreboard.sv driver_cbs.sv driver_cbs_scb.sv driver.sv
-ENV_FILES =  generator.sv environment.sv
-SVM_FILES = svm_component.sv svm_component_reg.sv svm_factory.sv
+ENV_FILES =  generator.sv environment.sv lc3_if.sv
 TEST_FILES = test_base.sv test_simple.sv
-VERILOG_FILES = ${TRANSACTION_FILES} ${DRIVER_FILES} ${ENV_FILES} ${SVM_FILES} ${TEST_FILES} top.sv	
+VERILOG_FILES = ${PACKET_FILES} ${DRIVER_FILES} ${ENV_FILES} ${TEST_FILES} top.sv	
 TOPLEVEL = top
 
 help:
